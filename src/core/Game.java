@@ -25,6 +25,7 @@ public class Game {
 		gameFrame.addMouseListener(input);
 		gameFrame.addKeyListener(input);
 		gameFrame.setVisible(true);
+		Tools.showErrorMessage("Mark is dumb", gameFrame);
 	}
 
 	public void paint(Graphics g) {

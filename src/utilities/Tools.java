@@ -35,8 +35,6 @@ import javax.swing.JOptionPane;
 
 public class Tools {
 
-	public static ArrayList<String> toLog = new ArrayList<String>();
-
 	public static void sleep(int amt) {
 		try {
 			Thread.sleep(amt);
@@ -85,15 +83,6 @@ public class Tools {
 		g.drawString(text.toString(), x + 1, y + 1);
 		g.setColor(c);
 		g.drawString(text.toString(), x, y);
-	}
-
-	public static boolean acceptableChar(int key) {
-		int[] accept = { 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 65, 83, 68, 70, 71, 72, 74, 75, 76, 90, 88, 67, 86, 66,
-				78, 77, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 32 };
-		for (int i : accept)
-			if (i == key)
-				return true;
-		return false;
 	}
 
 	public static void writeFile(String[] lines, File f) {
@@ -147,26 +136,7 @@ public class Tools {
 			a.append(inputLine);
 		in.close();
 		return a.toString();
-	}
-
-	public boolean isOnGameScreen(Point p) {
-		Rectangle r = new Rectangle(3, 3, 509, 330);
-		if (r.contains(p))
-			return true;
-		return false;
-	}
-
-	public static boolean onScreen(Point p) {
-		if (!new Rectangle(4, 4, 760, 498).contains(p))
-			return false;
-		return true;
-	}
-
-	public boolean onScreen(int x, int y) {
-		return Tools.onScreen(new Point(x, y));
-	}
-
-	
+	}	
 
 	public static void showErrorMessage(String message, Component c) {
 		JOptionPane.showMessageDialog(c, message);
