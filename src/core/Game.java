@@ -13,7 +13,7 @@ import utilities.Tools;
 public class Game {
 
 	private BufferPanel panel = null;
-	private JFrame gameFrame = new JFrame(Constants.name + "   -- " + Constants.version);
+	private JFrame gameFrame = new JFrame(Constants.name + "   --   " + Constants.version);
 	private Input input = new Input(this);
 
 	public Game() {
@@ -28,7 +28,7 @@ public class Game {
 	}
 
 	public void paint(Graphics g) {
-		Tools.drawSharpText("" + input.getMouseXY(), 25, 25, Color.BLUE, Color.BLACK, g);
+		Tools.drawSharpText(input.getMouseXY(), 25, 25, Color.BLUE, Color.BLACK, g);
 	}
 
 	public static void main(String[] arg0) {

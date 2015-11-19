@@ -80,11 +80,11 @@ public class Tools {
 		System.out.println(o.toString());
 	}
 
-	public static void drawSharpText(String text, int x, int y, Color c, Color shade, Graphics g) {
+	public static void drawSharpText(Object text, int x, int y, Color c, Color shade, Graphics g) {
 		g.setColor(shade);
-		g.drawString(text, x + 1, y + 1);
+		g.drawString(text.toString(), x + 1, y + 1);
 		g.setColor(c);
-		g.drawString(text, x, y);
+		g.drawString(text.toString(), x, y);
 	}
 
 	public static boolean acceptableChar(int key) {
