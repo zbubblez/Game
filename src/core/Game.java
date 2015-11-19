@@ -28,7 +28,7 @@ public class Game {
 	}
 
 	public void paint(Graphics g) {
-		Tools.drawSharpText("" + input.getMouseXY(), 25, 25, Color.BLUE, Color.BLACK, g);
+		Tools.drawSharpText("" + input.getMouseXY(), 25, 25, Color.BLUE, Color.BLACK, g);	//
 	}
 
 	public static void main(String[] arg0) {

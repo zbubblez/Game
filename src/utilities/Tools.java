@@ -189,7 +189,7 @@ public class Tools {
 	
 	/**
 	 * Function to calculate the center of mass for a given polygon, according
-	 * ot the algorithm defined at
+	 * to the algorithm defined at
 	 * http://local.wasp.uwa.edu.au/~pbourke/geometry/polyarea/
 	 * 
 	 * @param polyPoints
