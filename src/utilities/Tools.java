@@ -27,7 +27,6 @@ import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Random;
 
 import javax.imageio.ImageIO;
@@ -120,6 +119,7 @@ public class Tools {
 					line = br.readLine();
 					lines.add(line);
 				}
+				br.close();
 				return lines.toArray(new String[] {});
 			} else {
 				Tools.log("File Doesn't Exist: " + f.getPath());
